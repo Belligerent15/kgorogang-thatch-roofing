@@ -1,0 +1,168 @@
+/* ==========================================================================
+   SLIDERS.CSS
+   Slider and Carousel Component Styles for Kgorogang Thatch Roofing
+   ========================================================================== */
+
+/* =========================================
+   1. BASE SLIDER WRAPPER & CONTAINER
+   ========================================= */
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform var(--duration-slow, 500ms) var(--ease-luxury, cubic-bezier(0.16, 1, 0.3, 1));
+    will-change: transform;
+}
+
+.slider-slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Multi-item slider responsive flex utility */
+.slider-track-multi .slider-slide {
+    flex: 0 0 33.333%;
+}
+
+@media (max-width: 992px) {
+    .slider-track-multi .slider-slide {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-track-multi .slider-slide {
+        flex: 0 0 100%;
+    }
+}
+
+/* =========================================
+   2. HERO CAROUSEL / FULLSCREEN SLIDER
+   ========================================= */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--duration-slower, 700ms) ease, visibility var(--duration-slower, 700ms) ease;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.hero-slide::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(5, 5, 5, 0.6) 0%, rgba(5, 5, 5, 0.85) 100%);
+    z-index: -1;
+}
+
+/* =========================================
+   3. NAVIGATION CONTROLS (ARROWS & DOTS)
+   ========================================= */
+.slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--space-6, 1.5rem);
+}
+
+.slider-arrows {
+    display: flex;
+    gap: var(--space-3, 0.75rem);
+}
+
+.slider-arrow {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-full, 9999px);
+    background-color: var(--color-glass-light, rgba(255, 255, 255, 0.03));
+    border: 1px solid var(--color-glass-border, rgba(255, 255, 255, 0.05));
+    color: var(--color-neutral-0, #ffffff);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition-fast, all 150ms ease);
+}
+
+.slider-arrow:hover {
+    background-color: var(--color-accent, #c5a059);
+    border-color: var(--color-accent, #c5a059);
+    color: var(--color-neutral-900, #050505);
+    transform: scale(1.05);
+}
+
+.slider-arrow:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Pagination Dots */
+.slider-dots {
+    display: flex;
+    gap: var(--space-2, 0.5rem);
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: var(--radius-full, 9999px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-fast, all 150ms ease);
+    padding: 0;
+}
+
+.slider-dot:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slider-dot.active {
+    width: 28px;
+    background-color: var(--color-accent, #c5a059);
+    border-radius: var(--radius-md, 4px);
+}
+
+/* =========================================
+   4. TESTIMONIAL / QUOTE CAROUSEL SPECIFICS
+   ========================================= */
+.testimonial-slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-slide {
+    padding: var(--space-8, 2rem);
+    background: var(--color-glass-light, rgba(255, 255, 255, 0.03));
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--color-glass-border, rgba(255, 255, 255, 0.05));
+    border-left: 3px solid var(--color-accent, #c5a059);
+    border-radius: var(--radius-lg, 12px);
+}
