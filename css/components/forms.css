@@ -1,0 +1,197 @@
+/* ==========================================================================
+   FORMS.CSS
+   Form Controls and Interactive Input Styles for Kgorogang Thatch Roofing
+   ========================================================================== */
+
+/* =========================================
+   1. FORM LAYOUT & CONTAINERS
+   ========================================= */
+.form-luxury {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: var(--space-6, 1.5rem);
+    position: relative;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6, 1.5rem);
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   2. LABELS & TYPOGRAPHY
+   ========================================= */
+.form-luxury label,
+.form-group label {
+    display: block;
+    margin-bottom: var(--space-2, 0.5rem);
+    font-family: var(--font-sans, 'Montserrat', sans-serif);
+    font-size: var(--text-xs, 0.75rem);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider, 0.05em);
+    color: var(--color-text-secondary, #a0a0a0);
+    font-weight: var(--weight-semibold, 600);
+}
+
+.form-luxury label span.required,
+.form-group label span.required {
+    color: var(--color-accent, #c5a059);
+    margin-left: 2px;
+}
+
+/* =========================================
+   3. INPUT CONTROLS (TEXT, TEXTAREA, SELECT)
+   ========================================= */
+.form-control {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-glass-border, rgba(255, 255, 255, 0.1));
+    color: var(--color-text-inverse, #ffffff);
+    padding: var(--space-4, 1rem);
+    border-radius: var(--radius-md, 4px);
+    font-family: var(--font-body, 'Poppins', sans-serif);
+    font-size: var(--text-sm, 0.95rem);
+    transition: var(--transition-fast, all 150ms ease);
+}
+
+.form-control::placeholder {
+    color: var(--color-neutral-400, #757575);
+    opacity: 1;
+}
+
+.form-control:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-accent, #c5a059);
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 0 2px rgba(197, 160, 89, 0.15);
+}
+
+textarea.form-control {
+    min-height: 140px;
+    resize: vertical;
+}
+
+select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a0a0a0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+select.form-control option {
+    background-color: var(--color-neutral-800, #121212);
+    color: var(--color-text-primary, #e0e0e0);
+}
+
+/* =========================================
+   4. CUSTOM RADIO & CHECKBOX CARDS
+   ========================================= */
+.radio-card-grid,
+.checkbox-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-4, 1rem);
+}
+
+.radio-card,
+.checkbox-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-card input,
+.checkbox-card input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-card .card-content,
+.checkbox-card .card-content {
+    background: var(--color-glass-light, rgba(255, 255, 255, 0.02));
+    border: 1px solid var(--color-glass-border, rgba(255, 255, 255, 0.1));
+    padding: var(--space-6, 1.5rem) var(--space-4, 1rem);
+    text-align: center;
+    border-radius: var(--radius-md, 4px);
+    transition: var(--transition-fast, all 150ms ease);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.radio-card .card-content i,
+.checkbox-card .card-content i {
+    font-size: 1.5rem;
+    color: var(--color-neutral-300, #a0a0a0);
+    margin-bottom: var(--space-3, 0.75rem);
+    transition: var(--transition-fast, all 150ms ease);
+}
+
+.radio-card .card-content span,
+.checkbox-card .card-content span {
+    font-family: var(--font-sans, 'Montserrat', sans-serif);
+    font-size: var(--text-sm, 0.9rem);
+    font-weight: var(--weight-medium, 500);
+    color: var(--color-text-primary, #e0e0e0);
+    transition: var(--transition-fast, all 150ms ease);
+}
+
+.radio-card:hover .card-content,
+.checkbox-card:hover .card-content {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.radio-card input:checked + .card-content,
+.checkbox-card input:checked + .card-content {
+    border-color: var(--color-accent, #c5a059);
+    background: rgba(197, 160, 89, 0.08);
+    box-shadow: 0 0 0 1px var(--color-accent, #c5a059);
+}
+
+.radio-card input:checked + .card-content i,
+.checkbox-card input:checked + .card-content i,
+.radio-card input:checked + .card-content span,
+.checkbox-card input:checked + .card-content span {
+    color: var(--color-accent, #c5a059);
+}
+
+/* =========================================
+   5. FORM VALIDATION & STATES
+   ========================================= */
+.form-control.is-invalid {
+    border-color: #e53e3e;
+}
+
+.form-control.is-valid {
+    border-color: #38a169;
+}
+
+.form-error-message {
+    font-size: var(--text-xs, 0.75rem);
+    color: #e53e3e;
+    margin-top: var(--space-1, 0.25rem);
+    display: none;
+}
+
+.form-control.is-invalid ~ .form-error-message {
+    display: block;
+}
