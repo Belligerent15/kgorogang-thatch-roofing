@@ -1,0 +1,204 @@
+/* ==========================================================================
+   HEADER.CSS
+   Site Header, Navigation, and Mobile Menu Styles for Kgorogang Thatch Roofing
+   ========================================================================== */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: var(--z-header, 1000);
+    padding: var(--space-6, 1.5rem) 0;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    transition: var(--transition-normal, all 300ms ease);
+}
+
+/* Scrolled state applied via JavaScript */
+.site-header.scrolled {
+    background-color: rgba(5, 5, 5, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: var(--space-4, 1rem) 0;
+    border-bottom-color: var(--color-glass-border, rgba(255, 255, 255, 0.05));
+    box-shadow: var(--shadow-md, 0 4px 6px -1px rgba(0, 0, 0, 0.5));
+}
+
+.nav-container {
+    max-width: var(--container-width-xl, 1200px);
+    margin: 0 auto;
+    padding: 0 var(--section-padding-x, clamp(1.5rem, 5vw, 3rem));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =========================================
+   1. LOGO STYLING
+   ========================================= */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-text {
+    font-family: var(--font-heading, 'Cinzel', serif);
+    font-size: var(--text-xl, 1.5rem);
+    font-weight: var(--weight-semibold, 600);
+    color: var(--color-text-inverse, #ffffff);
+    letter-spacing: var(--tracking-wider, 0.05em);
+    transition: var(--transition-fast, color 150ms ease);
+}
+
+.logo:hover .logo-text {
+    color: var(--color-accent, #c5a059);
+}
+
+/* =========================================
+   2. DESKTOP NAVIGATION
+   ========================================= */
+.main-nav .nav-list {
+    display: flex;
+    gap: var(--space-8, 2rem);
+    align-items: center;
+}
+
+.main-nav a {
+    color: var(--color-text-secondary, #a0a0a0);
+    font-family: var(--font-sans, 'Montserrat', sans-serif);
+    font-size: var(--text-xs, 0.85rem);
+    font-weight: var(--weight-semibold, 600);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide, 0.025em);
+    position: relative;
+    transition: var(--transition-fast, color 150ms ease);
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent, #c5a059);
+    transition: width var(--duration-normal, 300ms) var(--ease-luxury, cubic-bezier(0.16, 1, 0.3, 1));
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--color-text-inverse, #ffffff);
+}
+
+.main-nav a:hover::after,
+.main-nav a.active::after {
+    width: 100%;
+}
+
+/* =========================================
+   3. NAVIGATION ACTIONS & MOBILE TOGGLE
+   ========================================= */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4, 1rem);
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 24px;
+    position: relative;
+    z-index: 1001;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-text-inverse, #ffffff);
+    transition: var(--transition-normal, all 300ms ease);
+}
+
+.hamburger {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger::before {
+    top: -8px;
+    left: 0;
+}
+
+.hamburger::after {
+    bottom: -8px;
+    left: 0;
+}
+
+/* Active Hamburger Animation */
+.mobile-menu-toggle.active .hamburger {
+    background-color: transparent;
+}
+
+.mobile-menu-toggle.active .hamburger::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.mobile-menu-toggle.active .hamburger::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+/* =========================================
+   4. RESPONSIVE MOBILE NAVIGATION
+   ========================================= */
+@media (max-width: 992px) {
+    .nav-actions .btn {
+        display: none; /* Hide primary quote button in header on smaller screens to save space */
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(5, 5, 5, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: var(--space-8, 2rem);
+        transition: right var(--duration-slow, 500ms) var(--ease-luxury, cubic-bezier(0.16, 1, 0.3, 1));
+        z-index: 1000;
+    }
+
+    .main-nav.open {
+        right: 0;
+    }
+
+    .main-nav .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-8, 2rem);
+    }
+
+    .main-nav a {
+        font-size: var(--text-xl, 1.25rem);
+    }
+}
