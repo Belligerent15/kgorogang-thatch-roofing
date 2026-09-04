@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Gallery | Kgorogang Thatch Roofing</title>
+    <meta name="description" content="View Kgorogang Thatch Roofing's extensive gallery of completed projects. High-quality imagery of luxury lodges, residential lapas, and expert thatch restoration.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Custom Header Brand Layout Styling */
+        .logo {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            line-height: 1.1;
+        }
+        .logo-brand {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: baseline;
+        }
+        .handwritten-k {
+            font-family: 'Caveat', cursive;
+            font-size: 2.3rem;
+            color: #c5a059;
+            margin-right: 2px;
+            line-height: 0.8;
+        }
+        .logo-sub {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.65rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <header class="site-header" id="header">
+        <div class="nav-container" style="display: flex; align-items: center; justify-content: space-between;">
+            <a href="index.html" class="logo">
+                <span class="logo-brand"><span class="handwritten-k">K</span>gorogang</span>
+                <span class="logo-sub">thatch roofing</span>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-list" style="display: flex; align-items: center; gap: 1.2rem; list-style: none; margin: 0; padding: 0;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="why-thatch.html">Why Thatch?</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="quote.html" class="btn btn-primary magnetic-btn">Get Quote</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="inner-hero parallax" style="height: 50vh; min-height: 400px;">
+            <div class="hero-overlay"></div>
+            <div class="hero-bg" style="background-image: url('assets/images/gallery-hero-bg.jpg');"></div>
+            
+            <div class="hero-content container text-center">
+                <span class="subheading split-text">Visual Portfolio</span>
+                <h1 class="hero-title split-text">Our Craft in Focus</h1>
+                <p class="hero-desc mt-3 max-width-600 mx-auto">Explore the precision, scale, and natural beauty of our completed thatch structures across Southern Africa.</p>
+            </div>
+        </section>
+
+        <section class="gallery-section section-padding">
+            <div class="container">
+                
+                <div class="gallery-filters text-center mb-5 reveal-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="lodges">Lodge &amp; Resorts</button>
+                    <button class="filter-btn" data-filter="homes">Homes</button>
+                    <button class="filter-btn" data-filter="lapas">Lapas</button>
+                    <button class="filter-btn" data-filter="before-after">Before &amp; After</button>
+                    <button class="filter-btn" data-filter="process">Process</button>
+                </div>
+
+                <div class="masonry-grid" id="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                    
+                    <div class="masonry-item gallery-item lodges reveal-up" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="gallery-image-wrapper" style="position: relative; aspect-ratio: 4/3; overflow: hidden;">
+                            <img src="assets/images/gallery/project-1.jpg" alt="Luxury Lodge Project" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                            <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(0,0,0,0.6); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; opacity: 0; transition: opacity 0.3s ease;">
+                                <span class="gallery-category" style="color: var(--color-accent, #c5a059); font-size: 0.85rem; text-transform: uppercase; font-weight: 600;">Lodge &amp; Resorts</span>
+                                <h3 style="color: #ffffff; font-size: 1.2rem; margin: 0.25rem 0 1rem 0;">Sabi Sands Luxury Lodge</h3>
+                                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                                    <button class="btn-icon expand-img" aria-label="View Image" style="background: var(--color-accent, #c5a059); border: none; width: 36px; height: 36px; border-radius: 50%; color: #111; cursor: pointer;"><i class="fas fa-expand"></i></button>
+                                    <a href="contact.html" class="whatsapp-link" aria-label="Chat on WhatsApp" style="background: #25D366; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="masonry-item gallery-item homes reveal-up" style="position: relative; overflow: hidden; border-radius: 8px; transition-delay: 0.1s;">
+                        <div class="gallery-image-wrapper" style="position: relative; aspect-ratio: 4/3; overflow: hidden;">
+                            <img src="assets/images/gallery/project-2.jpg" alt="Private Home Thatch Roofing" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                            <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(0,0,0,0.6); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; opacity: 0; transition: opacity 0.3s ease;">
+                                <span class="gallery-category" style="color: var(--color-accent, #c5a059); font-size: 0.85rem; text-transform: uppercase; font-weight: 600;">Homes</span>
+                                <h3 style="color: #ffffff; font-size: 1.2rem; margin: 0.25rem 0 1rem 0;">Limpopo Estate Residence</h3>
+                                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                                    <button class="btn-icon expand-img" aria-label="View Image" style="background: var(--color-accent, #c5a059); border: none; width: 36px; height: 36px; border-radius: 50%; color: #111; cursor: pointer;"><i class="fas fa-expand"></i></button>
+                                    <a href="contact.html" class="whatsapp-link" aria-label="Chat on WhatsApp" style="background: #25D366; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="masonry-item gallery-item lapas reveal-up" style="position: relative; overflow: hidden; border-radius: 8px; transition-delay: 0.2s;">
+                        <div class="gallery-image-wrapper" style="position: relative; aspect-ratio: 4/3; overflow: hidden;">
+                            <img src="assets/images/gallery/project-3.jpg" alt="Residential Lapa Structure" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                            <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(0,0,0,0.6); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; opacity: 0; transition: opacity 0.3s ease;">
+                                <span class="gallery-category" style="color: var(--color-accent, #c5a059); font-size: 0.85rem; text-transform: uppercase; font-weight: 600;">Lapas</span>
+                                <h3 style="color: #ffffff; font-size: 1.2rem; margin: 0.25rem 0 1rem 0;">Custom Entertainment Lapa</h3>
+                                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                                    <button class="btn-icon expand-img" aria-label="View Image" style="background: var(--color-accent, #c5a059); border: none; width: 36px; height: 36px; border-radius: 50%; color: #111; cursor: pointer;"><i class="fas fa-expand"></i></button>
+                                    <a href="contact.html" class="whatsapp-link" aria-label="Chat on WhatsApp" style="background: #25D366; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="masonry-item gallery-item before-after reveal-up" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="gallery-image-wrapper" style="position: relative; aspect-ratio: 4/3; overflow: hidden;">
+                            <img src="assets/images/gallery/project-4.jpg" alt="Thatch Roof Restoration Before and After" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                            <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(0,0,0,0.6); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; opacity: 0; transition: opacity 0.3s ease;">
+                                <span class="gallery-category" style="color: var(--color-accent, #c5a059); font-size: 0.85rem; text-transform: uppercase; font-weight: 600;">Before &amp; After</span>
+                                <h3 style="color: #ffffff; font-size: 1.2rem; margin: 0.25rem 0 1rem 0;">Thatch Re-thatching &amp; Repair</h3>
+                                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                                    <button class="btn-icon expand-img" aria-label="View Image" style="background: var(--color-accent, #c5a059); border: none; width: 36px; height: 36px; border-radius: 50%; color: #111; cursor: pointer;"><i class="fas fa-expand"></i></button>
+                                    <a href="contact.html" class="whatsapp-link" aria-label="Chat on WhatsApp" style="background: #25D366; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="masonry-item gallery-item process reveal-up" style="position: relative; overflow: hidden; border-radius: 8px; transition-delay: 0.1s;">
+                        <div class="gallery-image-wrapper" style="position: relative; aspect-ratio: 4/3; overflow: hidden;">
+                            <img src="assets/images/gallery/project-5.jpg" alt="Master thatcher constructing frame" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                            <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(0,0,0,0.6); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; opacity: 0; transition: opacity 0.3s ease;">
+                                <span class="gallery-category" style="color: var(--color-accent, #c5a059); font-size: 0.85rem; text-transform: uppercase; font-weight: 600;">Process</span>
+                                <h3 style="color: #ffffff; font-size: 1.2rem; margin: 0.25rem 0 1rem 0;">Expert Hand Tying &amp; Framing</h3>
+                                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                                    <button class="btn-icon expand-img" aria-label="View Image" style="background: var(--color-accent, #c5a059); border: none; width: 36px; height: 36px; border-radius: 50%; color: #111; cursor: pointer;"><i class="fas fa-expand"></i></button>
+                                    <a href="contact.html" class="whatsapp-link" aria-label="Chat on WhatsApp" style="background: #25D366; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="masonry-item gallery-item lodges reveal-up" style="position: relative; overflow: hidden; border-radius: 8px; transition-delay: 0.2s;">
+                        <div class="gallery-image-wrapper" style="position: relative; aspect-ratio: 4/3; overflow: hidden;">
+                            <img src="assets/images/gallery/project-6.jpg" alt="Safari Eco Resort" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                            <div class="gallery-overlay" style="position: absolute; inset: 0; background: rgba(0,0,0,0.6); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; opacity: 0; transition: opacity 0.3s ease;">
+                                <span class="gallery-category" style="color: var(--color-accent, #c5a059); font-size: 0.85rem; text-transform: uppercase; font-weight: 600;">Lodge &amp; Resorts</span>
+                                <h3 style="color: #ffffff; font-size: 1.2rem; margin: 0.25rem 0 1rem 0;">Mpumalanga Safari Camp</h3>
+                                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                                    <button class="btn-icon expand-img" aria-label="View Image" style="background: var(--color-accent, #c5a059); border: none; width: 36px; height: 36px; border-radius: 50%; color: #111; cursor: pointer;"><i class="fas fa-expand"></i></button>
+                                    <a href="contact.html" class="whatsapp-link" aria-label="Chat on WhatsApp" style="background: #25D366; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none;"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="text-center mt-5 reveal-up">
+                    <button class="btn btn-outline" id="load-more-btn">Load More Images</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="lightbox" id="gallery-lightbox">
+            <button class="lightbox-close" aria-label="Close">&times;</button>
+            <button class="lightbox-prev" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+            <div class="lightbox-content">
+                <img src="" alt="Enlarged Gallery Image" id="lightbox-img">
+                <div class="lightbox-caption" id="lightbox-caption"></div>
+            </div>
+            <button class="lightbox-next" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <section class="luxury-cta section-padding text-center">
+            <div class="cta-overlay"></div>
+            <div class="container relative z-index-1 reveal-up">
+                <h2>Inspired by our work?</h2>
+                <p class="mt-4 mb-5">Let us bring the same level of mastery to your property.</p>
+                <div class="hero-buttons justify-center">
+                    <a href="quote.html" class="btn btn-primary magnetic-btn">Request a Quote</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>KGOROGANG</h3>
+                <p>Crafting Timeless African Roofs for luxury destinations nationwide.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="why-thatch.html">Why Thatch?</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +27 72 480 1332</li>
+                    <li><i class="fas fa-envelope"></i> info@kgorogathatchroofing.co.za</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Limpopo, South Africa (Nationwide Service)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kgorogang Thatch Roofing. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    
+    <script src="js/core/utils.js"></script>
+    <script src="js/core/main.js"></script>
+    <script src="js/animations/gsap-setup.js"></script>
+    <script src="js/components/gallery.js"></script>
+</body>
+</html>
