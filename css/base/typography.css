@@ -1,0 +1,140 @@
+/* ==========================================================================
+   TYPOGRAPHY.CSS
+   Typography System and Text Styles for Kgorogang Thatch Roofing
+   ========================================================================== */
+
+/* Import Google Fonts (fallback if not linked in HTML) */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =========================================
+   1. BASE TYPOGRAPHY STYLES
+   ========================================= */
+body {
+    font-family: var(--font-body, 'Poppins', sans-serif);
+    font-size: var(--text-base, 1rem);
+    font-weight: var(--weight-regular, 400);
+    line-height: var(--leading-normal, 1.6);
+    color: var(--color-text-primary, #e0e0e0);
+}
+
+/* =========================================
+   2. HEADINGS
+   ========================================= */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading, 'Cinzel', serif);
+    color: var(--color-text-inverse, #ffffff);
+    font-weight: var(--weight-semibold, 600);
+    line-height: var(--leading-tight, 1.2);
+    margin-top: 0;
+    margin-bottom: var(--space-4, 1rem);
+}
+
+h1 {
+    font-size: var(--text-4xl, clamp(2.5rem, 5vw, 4rem));
+    letter-spacing: var(--tracking-wide, 0.025em);
+}
+
+h2 {
+    font-size: var(--text-3xl, clamp(2rem, 4vw, 3rem));
+}
+
+h3 {
+    font-size: var(--text-2xl, clamp(1.5rem, 3vw, 2rem));
+}
+
+h4 {
+    font-size: var(--text-xl, clamp(1.25rem, 2vw, 1.5rem));
+}
+
+h5 {
+    font-size: var(--text-lg, clamp(1.125rem, 1.5vw, 1.25rem));
+}
+
+h6 {
+    font-size: var(--text-base, 1rem);
+}
+
+/* =========================================
+   3. PARAGRAPHS & TEXT ELEMENTS
+   ========================================= */
+p {
+    margin-top: 0;
+    margin-bottom: var(--space-4, 1rem);
+    color: var(--color-text-secondary, #a0a0a0);
+}
+
+p.lead {
+    font-size: var(--text-lg, 1.125rem);
+    line-height: var(--leading-relaxed, 1.7);
+    color: var(--color-text-primary, #e0e0e0);
+}
+
+a {
+    color: var(--color-accent, #c5a059);
+    text-decoration: none;
+    transition: var(--transition-fast, all 150ms ease);
+}
+
+a:hover {
+    color: var(--color-neutral-0, #ffffff);
+}
+
+strong, b {
+    font-weight: var(--weight-bold, 700);
+    color: var(--color-text-inverse, #ffffff);
+}
+
+em, i.italic {
+    font-family: var(--font-accent, 'Playfair Display', serif);
+    font-style: italic;
+}
+
+blockquote {
+    font-family: var(--font-accent, 'Playfair Display', serif);
+    font-style: italic;
+    font-size: var(--text-lg, 1.125rem);
+    line-height: var(--leading-normal, 1.6);
+    color: var(--color-text-primary, #e0e0e0);
+    margin: var(--space-6, 1.5rem) 0;
+    padding-left: var(--space-6, 1.5rem);
+    border-left: 3px solid var(--color-accent, #c5a059);
+}
+
+/* =========================================
+   4. TYPOGRAPHY UTILITY CLASSES
+   ========================================= */
+.subheading {
+    font-family: var(--font-sans, 'Montserrat', sans-serif);
+    color: var(--color-accent, #c5a059);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-luxury, 0.2em);
+    font-size: var(--text-xs, 0.75rem);
+    font-weight: var(--weight-semibold, 600);
+    display: block;
+    margin-bottom: var(--space-2, 0.5rem);
+}
+
+.gold-text {
+    color: var(--color-accent, #c5a059);
+}
+
+.text-serif {
+    font-family: var(--font-accent, 'Playfair Display', serif);
+}
+
+.text-heading {
+    font-family: var(--font-heading, 'Cinzel', serif);
+}
+
+.text-sans {
+    font-family: var(--font-sans, 'Montserrat', sans-serif);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider, 0.05em);
+}
+
+.text-balance {
+    text-wrap: balance;
+}
