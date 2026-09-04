@@ -1,0 +1,181 @@
+/* ==========================================================================
+   GRID.CSS
+   Layout Grids, Containers, and Spacing Utilities for Kgorogang Thatch Roofing
+   ========================================================================== */
+
+/* =========================================
+   1. CONTAINERS
+   ========================================= */
+.container {
+    width: 100%;
+    max-width: var(--container-width-xl, 1200px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--section-padding-x, clamp(1.5rem, 5vw, 3rem));
+    padding-right: var(--section-padding-x, clamp(1.5rem, 5vw, 3rem));
+}
+
+.container-sm {
+    max-width: var(--container-width-sm, 640px);
+}
+
+.container-md {
+    max-width: var(--container-width-md, 768px);
+}
+
+.container-lg {
+    max-width: var(--container-width-lg, 1024px);
+}
+
+.container-2xl {
+    max-width: var(--container-width-2xl, 1440px);
+}
+
+/* =========================================
+   2. SECTION PADDING UTILITIES
+   ========================================= */
+.section-padding {
+    padding-top: var(--section-padding-y, clamp(4rem, 8vw, 8rem));
+    padding-bottom: var(--section-padding-y, clamp(4rem, 8vw, 8rem));
+}
+
+.section-padding-top {
+    padding-top: var(--section-padding-y, clamp(4rem, 8vw, 8rem));
+}
+
+.section-padding-bottom {
+    padding-bottom: var(--section-padding-y, clamp(4rem, 8vw, 8rem));
+}
+
+.pt-0 { padding-top: 0 !important; }
+.pb-0 { padding-bottom: 0 !important; }
+
+/* =========================================
+   3. FLEXBOX UTILITIES
+   ========================================= */
+.d-flex { display: flex; }
+.d-inline-flex { display: inline-flex; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+
+.justify-start { justify-content: flex-start; }
+.justify-end { justify-content: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.justify-evenly { justify-content: space-evenly; }
+
+.align-start { align-items: flex-start; }
+.align-end { align-items: flex-end; }
+.align-center { align-items: center; }
+.align-baseline { align-items: baseline; }
+.align-stretch { align-items: stretch; }
+
+.flex-grow-1 { flex-grow: 1; }
+.flex-shrink-0 { flex-shrink: 0; }
+
+/* Flex Gap Helpers */
+.gap-1 { gap: var(--space-1, 0.25rem); }
+.gap-2 { gap: var(--space-2, 0.5rem); }
+.gap-3 { gap: var(--space-3, 0.75rem); }
+.gap-4 { gap: var(--space-4, 1rem); }
+.gap-6 { gap: var(--space-6, 1.5rem); }
+.gap-8 { gap: var(--space-8, 2rem); }
+.gap-12 { gap: var(--space-12, 3rem); }
+
+/* =========================================
+   4. CSS GRID UTILITIES
+   ========================================= */
+.d-grid { display: grid; }
+
+/* Split / 2-Column Layout */
+.split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16, 4rem);
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .split-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-8, 2rem);
+    }
+}
+
+/* Multi-Column Responsive Grids */
+.grid-2-col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-8, 2rem);
+}
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-8, 2rem);
+}
+
+.grid-4-col {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-8, 2rem);
+}
+
+/* Auto-fit Grids with minimum column widths */
+.grid-auto-fit-250 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-8, 2rem);
+}
+
+.grid-auto-fit-300 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-8, 2rem);
+}
+
+/* Responsive Grid Breakdowns */
+@media (max-width: 992px) {
+    .grid-4-col {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .grid-3-col {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-4-col,
+    .grid-3-col,
+    .grid-2-col {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   5. SPACING & MARGIN/PADDING UTILITIES
+   ========================================= */
+.mx-auto { margin-left: auto; margin-right: auto; }
+.my-auto { margin-top: auto; margin-bottom: auto; }
+
+.mt-2 { margin-top: var(--space-2, 0.5rem); }
+.mt-3 { margin-top: var(--space-3, 0.75rem); }
+.mt-4 { margin-top: var(--space-4, 1rem); }
+.mt-6 { margin-top: var(--space-6, 1.5rem); }
+.mt-8 { margin-top: var(--space-8, 2rem); }
+.mt-12 { margin-top: var(--space-12, 3rem); }
+.mt-16 { margin-top: var(--space-16, 4rem); }
+
+.mb-2 { margin-bottom: var(--space-2, 0.5rem); }
+.mb-3 { margin-bottom: var(--space-3, 0.75rem); }
+.mb-4 { margin-bottom: var(--space-4, 1rem); }
+.mb-6 { margin-bottom: var(--space-6, 1.5rem); }
+.mb-8 { margin-bottom: var(--space-8, 2rem); }
+.mb-12 { margin-bottom: var(--space-12, 3rem); }
+.mb-16 { margin-bottom: var(--space-16, 4rem); }
+
+.p-4 { padding: var(--space-4, 1rem); }
+.p-6 { padding: var(--space-6, 1.5rem); }
+.p-8 { padding: var(--space-8, 2rem); }
