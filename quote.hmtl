@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Request a Quote | Kgorogang Thatch Roofing</title>
+    <meta name="description" content="Request a customized, transparent quotation for your thatch roofing project. Serving commercial lodges and residential properties nationwide.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Custom Header Brand Layout Styling */
+        .logo {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            line-height: 1.1;
+        }
+        .logo-brand {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: baseline;
+        }
+        .handwritten-k {
+            font-family: 'Caveat', cursive;
+            font-size: 2.3rem;
+            color: #c5a059;
+            margin-right: 2px;
+            line-height: 0.8;
+        }
+        .logo-sub {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.65rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 2px;
+        }
+
+        /* Gold Boxed Wrappers for Elements & Images */
+        .gold-boxed-container {
+            position: relative;
+            background: rgba(18, 18, 18, 0.95);
+            border: 2px solid #c5a059;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(197, 160, 89, 0.2);
+            overflow: hidden;
+        }
+        .gold-boxed-container img {
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .gold-text {
+            color: #c5a059 !important;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <header class="site-header" id="header">
+        <div class="nav-container" style="display: flex; align-items: center; justify-content: space-between;">
+            <a href="index.html" class="logo">
+                <span class="logo-brand"><span class="handwritten-k">K</span>gorogang</span>
+                <span class="logo-sub">thatch roofing</span>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-list" style="display: flex; align-items: center; gap: 1.2rem; list-style: none; margin: 0; padding: 0;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="why-thatch.html">Why Thatch?</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="quote.html" class="btn btn-primary magnetic-btn active">Get Quote</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="inner-hero parallax" style="height: 45vh; min-height: 350px;">
+            <div class="hero-overlay"></div>
+            <div class="hero-bg" style="background-image: url('assets/images/quote/quote-hero-blueprint.jpg');"></div>
+            
+            <div class="hero-content container text-center">
+                <span class="subheading split-text">Start Your Journey</span>
+                <h1 class="hero-title split-text">Request an Estimate</h1>
+            </div>
+        </section>
+
+        <section class="quote-section section-padding">
+            <div class="container split-layout">
+                
+                <div class="quote-info reveal-left">
+                    
+                    <div class="gold-boxed-container mb-4">
+                        <span class="subheading gold-text">Transparent Pricing</span>
+                        <h2 class="mb-4">Let's build something extraordinary.</h2>
+                        <p class="text-gray mb-4">Provide us with the initial details of your project. Our master craftsmen and estimators will review your requirements and get back to you within 24-48 hours to schedule a site consultation.</p>
+                        
+                        <div class="info-block mb-3">
+                            <h4 class="gold-text mb-2"><i class="fas fa-clipboard-check mr-2"></i> What to expect</h4>
+                            <ul class="luxury-list minimalist text-sm">
+                                <li><i class="fas fa-check gold-icon"></i> Rapid response from our estimating team</li>
+                                <li><i class="fas fa-check gold-icon"></i> Preliminary cost guidance based on dimensions</li>
+                                <li><i class="fas fa-check gold-icon"></i> Seamless scheduling for physical site inspections</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="gold-boxed-container mb-4">
+                        <h4 class="gold-text mb-3"><i class="fas fa-image mr-2"></i> Our Craftsmanship Preview</h4>
+                        <img src="assets/images/quote/craftsmanship-preview.jpg" alt="Kgorogang Thatch Craftsmanship" onerror="this.src='https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                        <p class="text-xs text-gray mt-2 text-center">Precision structural framing & hand-tied African grass.</p>
+                    </div>
+
+                    <div class="gold-boxed-container">
+                        <h4 class="gold-text mb-2">Need immediate assistance?</h4>
+                        <p class="text-sm mb-3">For emergency storm damage repairs or urgent structural assessments, please call us directly.</p>
+                        <a href="tel:+27724801332" class="gold-text font-weight-bold" style="font-size: 1.2rem;">
+                            <i class="fas fa-phone-alt mr-2"></i> +27 72 480 1332
+                        </a>
+                    </div>
+                </div>
+
+                <div class="quote-form-container reveal-right">
+                    <form action="#" method="POST" id="quote-form" class="gold-boxed-container p-5 form-luxury">
+                        
+                        <h3 class="mb-4 gold-text">Project Details</h3>
+                        
+                        <div class="form-grid mb-4">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="first_name" class="form-control" required placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="last_name" class="form-control" required placeholder="Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" required placeholder="+27 00 000 0000">
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label class="mb-3 d-block">Service Required *</label>
+                            <div class="radio-card-grid" id="service-selector">
+                                <label class="radio-card">
+                                    <input type="radio" name="service_type" value="commercial">
+                                    <div class="card-content">
+                                        <i class="fas fa-hotel"></i>
+                                        <span>Lodge / Resort</span>
+                                    </div>
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="service_type" value="residential">
+                                    <div class="card-content">
+                                        <i class="fas fa-home"></i>
+                                        <span>Residential / Lapa</span>
+                                    </div>
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="service_type" value="maintenance">
+                                    <div class="card-content">
+                                        <i class="fas fa-tools"></i>
+                                        <span>Repair & Maintenance</span>
+                                    </div>
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="service_type" value="fire">
+                                    <div class="card-content">
+                                        <i class="fas fa-fire-extinguisher"></i>
+                                        <span>Fire Treatment</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label for="location">Project Location (City/Province) *</label>
+                            <input type="text" id="location" name="location" class="form-control" required placeholder="e.g., Hoedspruit, Limpopo">
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label for="size">Approximate Roof Size (Optional)</label>
+                            <select id="size" name="size" class="form-control custom-select">
+                                <option value="" disabled selected>Select an estimate...</option>
+                                <option value="small">Small (Under 50 sqm - e.g., Gazebo)</option>
+                                <option value="medium">Medium (50 - 150 sqm - e.g., Lapa/Cottage)</option>
+                                <option value="large">Large (150 - 400 sqm - e.g., House)</option>
+                                <option value="xlarge">Extra Large (400+ sqm - e.g., Lodge/Commercial)</option>
+                                <option value="unsure">I'm not sure, requires measurement</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mb-5">
+                            <label for="message">Project Description</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us more about your vision, timeline, or specific requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary magnetic-btn w-100 py-3" id="submit-quote">
+                            Submit Request <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                        <p class="text-xs text-center text-gray mt-3">Your information is kept strictly confidential.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>KGOROGANG</h3>
+                <p>Crafting Timeless African Roofs for luxury destinations nationwide.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="projects.html">Portfolio</a></li>
+                    <li><a href="why-thatch.html">Why Thatch?</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +27 72 480 1332</li>
+                    <li><i class="fas fa-envelope"></i> info@kgorogathatchroofing.co.za</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Manganeng - Jane Furse, Limpopo, South Africa (Nationwide Service)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kgorogang Thatch Roofing. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <script src="js/core/utils.js"></script>
+    <script src="js/core/main.js"></script>
+    <script src="js/animations/gsap-setup.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const service = urlParams.get('service');
+            
+            if(service) {
+                const radioInput = document.querySelector(`input[name="service_type"][value="${service}"]`);
+                if(radioInput) {
+                    radioInput.checked = true;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
