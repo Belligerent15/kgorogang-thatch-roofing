@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Meta Tags -->
+    <title>Contact Us | Kgorogang Thatch Roofing</title>
+    <meta name="description" content="Get in touch with Kgorogang Thatch Roofing. Nationwide service across South Africa for luxury lodge roofing, residential lapas, and emergency thatch repairs.">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Custom Header Brand Layout Styling */
+        .logo {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            line-height: 1.1;
+        }
+        .logo-brand {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: baseline;
+        }
+        .handwritten-k {
+            font-family: 'Caveat', cursive;
+            font-size: 2.3rem;
+            color: #c5a059;
+            margin-right: 2px;
+            line-height: 0.8;
+        }
+        .logo-sub {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.65rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 2px;
+        }
+
+        /* Gold Boxed Wrapper for Contact Form */
+        .gold-boxed-wrapper {
+            position: relative;
+            background: rgba(18, 18, 18, 0.95);
+            border: 2px solid #c5a059;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(197, 160, 89, 0.2);
+            overflow: hidden;
+        }
+        .gold-boxed-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            z-index: 0;
+        }
+        .gold-boxed-wrapper > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* South Africa Travel Banner Section */
+        .sa-travel-section {
+            background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+            border-top: 1px solid rgba(197, 160, 89, 0.2);
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+            padding: 4rem 2rem;
+        }
+        .sa-travel-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .sa-map-emblem {
+            font-size: 7rem;
+            color: #c5a059;
+            filter: drop-shadow(0 0 15px rgba(197, 160, 89, 0.4));
+            animation: pulse-glow 3s infinite ease-in-out;
+        }
+        .sa-travel-text h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: #ffffff;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .sa-travel-text p {
+            color: #b0b0b0;
+            font-size: 1.1rem;
+            max-width: 550px;
+            line-height: 1.6;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { transform: scale(1); opacity: 0.9; }
+            50% { transform: scale(1.03); opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            .sa-travel-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 2rem;
+            }
+            .sa-map-emblem {
+                font-size: 5rem;
+            }
+            .sa-travel-text h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header" id="header">
+        <div class="nav-container" style="display: flex; align-items: center; justify-content: space-between;">
+            <a href="index.html" class="logo">
+                <span class="logo-brand"><span class="handwritten-k">K</span>gorogang</span>
+                <span class="logo-sub">thatch roofing</span>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-list" style="display: flex; align-items: center; gap: 1.5rem; list-style: none; margin: 0; padding: 0;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="why-thatch.html">Why Thatch?</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="quote.html" class="btn btn-primary magnetic-btn">Get Quote</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+        
+        <!-- INNER PAGE HERO -->
+        <section class="inner-hero parallax">
+            <div class="hero-overlay"></div>
+            <!-- High-end architectural roof meeting the sky -->
+            <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1542314831-c6a4d27c628b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+            
+            <div class="hero-content container text-center">
+                <span class="subheading split-text">Let's Connect</span>
+                <h1 class="hero-title split-text">Build Your Legacy With Us</h1>
+                <p class="hero-desc mt-3">From emergency repairs to master-crafted luxury lodges, our nationwide team is ready to assist you.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section section-padding container split-layout">
+            
+            <!-- Left Column: Contact Details -->
+            <div class="contact-info-wrapper reveal-left">
+                <span class="subheading">Direct Access</span>
+                <h2 class="mb-4">Get In Touch</h2>
+                <p class="mb-5">Whether you are planning a massive commercial eco-resort or need urgent maintenance on your home's lapa, Piet Seloga and the Kgorogang team are at your service.</p>
+                
+                <div class="contact-cards-grid">
+                    <!-- Phone -->
+                    <div class="info-card glass-card mb-4">
+                        <i class="fas fa-phone-alt gold-icon large-icon"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>Speak directly with our roofing experts.</p>
+                            <a href="tel:+27724801332" class="contact-link gold-text text-lg"><b>+27 72 480 1332</b></a>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="info-card glass-card mb-4">
+                        <i class="fas fa-envelope gold-icon large-icon"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>Send us your architectural plans or queries.</p>
+                            <a href="mailto:info@kgorogathatchroofing.co.za" class="contact-link gold-text"><b>info@kgorogathatchroofing.co.za</b></a>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="info-card glass-card mb-4">
+                        <i class="fab fa-whatsapp gold-icon large-icon" style="color: #25D366;"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>Send us a message or photos of your roof instantly.</p>
+                            <a href="https://wa.me/27724801332" target="_blank" class="btn btn-whatsapp mt-2">Chat on WhatsApp</a>
+                        </div>
+                    </div>
+
+                    <!-- Location & Hours -->
+                    <div class="info-card glass-card mb-4">
+                        <i class="fas fa-map-marker-alt gold-icon large-icon"></i>
+                        <div>
+                            <h4>Headquarters & Service Area</h4>
+                            <p>Based in <b>Limpopo, South Africa</b></p>
+                            <p class="text-sm mt-1"><i>Deploying specialized teams nationwide across all 9 provinces.</i></p>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Contact -->
+                    <div class="info-card glass-card alert-card mt-5" style="border-left: 4px solid var(--color-gold);">
+                        <i class="fas fa-exclamation-triangle gold-icon large-icon"></i>
+                        <div>
+                            <h4>Emergency Repairs</h4>
+                            <p>Storm damage? Structural failure? We offer priority dispatch for urgent thatch roofing emergencies.</p>
+                            <p class="mt-2"><strong>24/7 Response Line:</strong> <a href="tel:+27724801332" class="gold-text">+27 72 480 1332</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form Surrounded by Gold Box & Custom Background Photo -->
+            <div class="contact-form-wrapper gold-boxed-wrapper p-5 reveal-right">
+                <!-- Background image path for send message box: assets/images/contact-form-bg.jpg -->
+                <div class="gold-boxed-bg" style="background-image: url('assets/images/contact-form-bg.jpg');"></div>
+                
+                <h3 class="mb-4" style="color: #ffffff; position: relative; z-index: 1;">Send a Message</h3>
+                <form id="contactForm" class="luxury-form" action="#" method="POST" style="position: relative; z-index: 1;">
+                    
+                    <div class="form-group mb-4">
+                        <label for="name" style="color: #ddd;">Full Name *</label>
+                        <input type="text" id="name" name="name" class="form-control" required placeholder="E.g., John Doe">
+                    </div>
+
+                    <div class="form-grid split-layout mb-4" style="gap: 1rem; grid-template-columns: 1fr 1fr;">
+                        <div class="form-group">
+                            <label for="phone" style="color: #ddd;">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required placeholder="E.g., 072 123 4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" style="color: #ddd;">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="E.g., john@example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="interest" style="color: #ddd;">What are you interested in? *</label>
+                        <select id="interest" name="interest" class="form-control custom-select" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="new_roof">New Thatch Roof Construction</option>
+                            <option value="repairs">Roof Repairs & Maintenance</option>
+                            <option value="fire_treatment">Fire Retardant Treatment</option>
+                            <option value="commercial">Commercial / Lodge Project</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="message" style="color: #ddd;">Project Details or Message *</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required placeholder="Tell us about your project, location, and timeline..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary magnetic-btn w-100 mt-2">
+                        Send Message <i class="fas fa-paper-plane ms-2"></i>
+                    </button>
+                    <p class="text-xs text-center mt-3 text-muted">We respect your privacy. Your details are safe with us.</p>
+                </form>
+            </div>
+
+        </section>
+
+        <!-- SOUTH AFRICA TRAVEL ANYWHERE SECTION -->
+        <section class="sa-travel-section reveal-up">
+            <div class="sa-travel-container">
+                <div class="sa-map-emblem">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="sa-travel-text">
+                    <h2>WE TRAVEL ANYWHERE IN SOUTH AFRICA</h2>
+                    <p>From the lush valleys of Limpopo down to the Western Cape winelands and across all nine provinces, our expert teams mobilize fully equipped to construct and restore master thatch roofs wherever you are.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FULL WIDTH MAP SECTION -->
+        <section class="map-section reveal-up">
+            <!-- Using a grayscale filter via CSS to keep the luxury dark aesthetic -->
+            <div class="map-container" style="width: 100%; height: 500px; filter: grayscale(100%) invert(92%) contrast(83%);">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650451.986623696!2d27.652176840733857!3d-23.957599292850383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6c84132cc77bd%3A0xc68297b69c7621c8!2sLimpopo!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>KGOROGANG</h3>
+                <p>Crafting Timeless African Roofs for luxury destinations nationwide.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="projects.html">Portfolio</a></li>
+                    <li><a href="why-thatch.html">Why Thatch?</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +27 72 480 1332</li>
+                    <li><i class="fas fa-envelope"></i> info@kgorogathatchroofing.co.za</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Manganeng - Jane Furse, Limpopo, South Africa (Nationwide Service)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kgorogang Thatch Roofing. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <script src="js/core/utils.js"></script>
+    <script src="js/core/main.js"></script>
+    <script src="js/animations/gsap-setup.js"></script>
+    <script src="js/components/form-val.js"></script>
+</body>
+</html>
