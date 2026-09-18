@@ -1,1 +1,72 @@
-C:\Users\temol\Desktop\MyProject\kgorogang-thatch-roofing\assets\css\styles.css
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* --- Custom Utility & Component Styles --- */
+
+/* Custom bullet list with luxury gold checkmark styling */
+.luxury-check-list li {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.luxury-check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #c5a059;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Selection Colors */
+::selection {
+    background-color: #c5a059;
+    color: #050505;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c5a059;
+}
+
+/* Subtle Glassmorphism Navbar State */
+.nav-scrolled {
+    background-color: rgba(5, 5, 5, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Utility Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
