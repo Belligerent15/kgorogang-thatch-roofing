@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Kgorogang Thatch Roofing</title>
+    
+    <!-- Tailwind CSS for Responsive Utility Classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rich-black': '#050505',
+                        'charcoal': '#121212',
+                        'luxury-gold': '#c5a059',
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- External Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-rich-black text-gray-300 font-poppins antialiased selection:bg-luxury-gold selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full z-50 bg-rich-black/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-1 group">
+                    <span class="font-playfair font-bold text-4xl text-luxury-gold tracking-wider group-hover:scale-105 transition-transform duration-300">K</span>
+                    <span class="font-playfair font-semibold text-2xl text-white tracking-widest mt-1">GOROGANG</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-sm uppercase tracking-widest hover:text-luxury-gold transition-colors duration-300">Home</a>
+                    <a href="about.html" class="text-sm uppercase tracking-widest hover:text-luxury-gold transition-colors duration-300">About</a>
+                    <a href="services.html" class="text-sm uppercase tracking-widest text-luxury-gold transition-colors duration-300">Services</a>
+                    <a href="gallery.html" class="text-sm uppercase tracking-widest hover:text-luxury-gold transition-colors duration-300">Gallery</a>
+                    <a href="projects.html" class="text-sm uppercase tracking-widest hover:text-luxury-gold transition-colors duration-300">Projects</a>
+                    <a href="contact.html" class="px-6 py-3 border border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-rich-black uppercase tracking-widest text-sm transition-all duration-300">Get a Quote</a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-luxury-gold focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="fixed inset-y-0 right-0 w-72 bg-charcoal z-50 shadow-2xl flex flex-col pt-24 px-8 gap-6 md:hidden">
+        <button id="close-menu-btn" class="absolute top-8 right-6 text-white hover:text-luxury-gold">
+            <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+        <a href="index.html" class="text-lg uppercase tracking-widest text-white hover:text-luxury-gold">Home</a>
+        <a href="about.html" class="text-lg uppercase tracking-widest text-white hover:text-luxury-gold">About</a>
+        <a href="services.html" class="text-lg uppercase tracking-widest text-luxury-gold">Services</a>
+        <a href="gallery.html" class="text-lg uppercase tracking-widest text-white hover:text-luxury-gold">Gallery</a>
+        <a href="projects.html" class="text-lg uppercase tracking-widest text-white hover:text-luxury-gold">Projects</a>
+        <a href="contact.html" class="mt-4 px-6 py-4 border border-luxury-gold text-luxury-gold text-center hover:bg-luxury-gold hover:text-rich-black uppercase tracking-widest text-sm">Get a Quote</a>
+    </div>
+
+    <!-- Page Header Section -->
+    <section class="pt-40 pb-20 px-4 bg-charcoal relative border-b border-white/5">
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <span class="text-luxury-gold font-poppins uppercase tracking-[0.3em] text-sm mb-4 block">Comprehensive Solutions</span>
+            <h1 class="text-5xl md:text-6xl font-cinzel text-white mb-6">Our Craft & Services</h1>
+            <p class="max-w-2xl mx-auto text-gray-400 leading-relaxed text-lg font-light">
+                From initial structural engineering to final hand-woven ridges and maintenance preservation, we deliver uncompromising quality across all our services.
+            </p>
+        </div>
+    </section>
+
+    <!-- Detailed Services Sections -->
+    <section class="py-24 px-4 bg-rich-black space-y-24">
+        
+        <!-- Service 1: Residential Thatching -->
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1">
+                <span class="text-luxury-gold font-poppins uppercase tracking-[0.2em] text-sm mb-2 block">01 / Residential</span>
+                <h2 class="text-3xl md:text-4xl font-cinzel text-white mb-6">Residential Thatching</h2>
+                <p class="text-gray-400 leading-relaxed mb-6 font-light">
+                    Custom thatch roofs designed to offer unmatched natural insulation and striking visual appeal for modern homes. We collaborate closely with homeowners and architects to blend traditional charm with contemporary estate aesthetics.
+                </p>
+                <ul class="luxury-check-list text-gray-300 font-light space-y-3 mb-8">
+                    <li>Superior Thermal Efficiency & Natural Climate Control</li>
+                    <li>Custom Architectural Styling for Modern & Country Estates</li>
+                    <li>High-Grade Timber Framework Construction</li>
+                </ul>
+                <a href="contact.html" class="inline-block px-8 py-3 border border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-rich-black uppercase tracking-widest text-sm transition-all duration-300">Book a Consultation</a>
+            </div>
+            <div class="order-1 lg:order-2">
+                <img src="assets/images/Home-Photo2.jpeg" alt="Residential Thatching Project" class="w-full h-auto shadow-2xl border border-white/10">
+            </div>
+        </div>
+
+        <!-- Service 2: Lapas & Gazebos -->
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="assets/images/Service2.jpeg" alt="African Lapas and Gazebos" class="w-full h-auto shadow-2xl border border-white/10">
+            </div>
+            <div>
+                <span class="text-luxury-gold font-poppins uppercase tracking-[0.2em] text-sm mb-2 block">02 / Entertainment</span>
+                <h2 class="text-3xl md:text-4xl font-cinzel text-white mb-6">Lapas & Gazebos</h2>
+                <p class="text-gray-400 leading-relaxed mb-6 font-light">
+                    Transform your outdoor entertainment zones with bespoke African lapas built for leisure and elegance. Whether poolside pavilions or expansive entertainment bomas, we craft functional outdoor spaces that anchor your property.
+                </p>
+                <ul class="luxury-check-list text-gray-300 font-light space-y-3 mb-8">
+                    <li>Bespoke Outdoor Living & Entertainment Structures</li>
+                    <li>Weather-Resistant Pole & Pole-barn Engineering</li>
+                    <li>Integrated Boma & Braai Integration Options</li>
+                </ul>
+                <a href="contact.html" class="inline-block px-8 py-3 border border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-rich-black uppercase tracking-widest text-sm transition-all duration-300">Book a Consultation</a>
+            </div>
+        </div>
+
+        <!-- Service 3: Thatch Maintenance -->
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1">
+                <span class="text-luxury-gold font-poppins uppercase tracking-[0.2em] text-sm mb-2 block">03 / Preservation</span>
+                <h2 class="text-3xl md:text-4xl font-cinzel text-white mb-6">Thatch Maintenance</h2>
+                <p class="text-gray-400 leading-relaxed mb-6 font-light">
+                    Professional combing, re-thatching, waterproofing, and structural inspections to extend roof lifespan. Protect your investment with proactive care handled by certified master craftsmen.
+                </p>
+                <ul class="luxury-check-list text-gray-300 font-light space-y-3 mb-8">
+                    <li>Comprehensive Structural & Leak Assessments</li>
+                    <li>Expert Combing & Ridge Re-Thatching</li>
+                    <li>Advanced Waterproofing & Longevity Treatments</li>
+                </ul>
+                <a href="contact.html" class="inline-block px-8 py-3 border border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-rich-black uppercase tracking-widest text-sm transition-all duration-300">Book a Consultation</a>
+            </div>
+            <div class="order-1 lg:order-2">
+                <img src="assets/images/Service1.jpeg" alt="Thatch Maintenance Service" class="w-full h-auto shadow-2xl border border-white/10">
+            </div>
+        </div>
+
+        <!-- Service 4: Fire Protection -->
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="assets/images/Gallery4.jpeg" alt="Fire Protection Systems" class="w-full h-auto shadow-2xl border border-white/10">
+            </div>
+            <div>
+                <span class="text-luxury-gold font-poppins uppercase tracking-[0.2em] text-sm mb-2 block">04 / Safety</span>
+                <h2 class="text-3xl md:text-4xl font-cinzel text-white mb-6">Fire Protection</h2>
+                <p class="text-gray-400 leading-relaxed mb-6 font-light">
+                    State-of-the-art fire-retardant chemical applications and integrated suppression systems for total peace of mind. We ensure your luxury build meets rigorous safety standards without compromising natural aesthetic integrity.
+                </p>
+                <ul class="luxury-check-list text-gray-300 font-light space-y-3 mb-8">
+                    <li>Certified Fire-Retardant Chemical Impregnation</li>
+                    <li>Integrated Lightning Masts & Earthing Systems</li>
+                    <li>Automatic Mist & Suppression System Integrations</li>
+                </ul>
+                <a href="contact.html" class="inline-block px-8 py-3 border border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-rich-black uppercase tracking-widest text-sm transition-all duration-300">Book a Consultation</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-rich-black pt-20 pb-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                
+                <!-- Brand Column -->
+                <div>
+                    <a href="index.html" class="flex items-center gap-1 mb-6">
+                        <span class="font-playfair font-bold text-4xl text-luxury-gold tracking-wider">K</span>
+                        <span class="font-playfair font-semibold text-2xl text-white tracking-widest mt-1">GOROGANG</span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs font-light">
+                        Pioneering the pinnacle of luxury African thatch architecture, combining traditional durability with high-end contemporary elegance.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-gray-400 hover:text-luxury-gold hover:border-luxury-gold transition-all">FB</a>
+                        <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-gray-400 hover:text-luxury-gold hover:border-luxury-gold transition-all">IG</a>
+                        <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center text-gray-400 hover:text-luxury-gold hover:border-luxury-gold transition-all">IN</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-cinzel text-xl mb-6">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="text-gray-400 hover:text-luxury-gold text-sm tracking-widest uppercase transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-luxury-gold text-sm tracking-widest uppercase transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-luxury-gold text-sm tracking-widest uppercase transition-colors">Services</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-luxury-gold text-sm tracking-widest uppercase transition-colors">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-luxury-gold text-sm tracking-widest uppercase transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-cinzel text-xl mb-6">Contact Us</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-luxury-gold mr-3">⚲</span>
+                            <span class="text-gray-400 text-sm font-light"> Manganeng - Jane Furse, Limpopo, South Africa (Nationwide Service)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-luxury-gold mr-3">✆</span>
+                            <span class="text-gray-400 text-sm font-light">+27 72 480 1332</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-luxury-gold mr-3">✉</span>
+                            <span class="text-gray-400 text-sm font-light">petersonseloga@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="border-t border-white/5 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-xs tracking-widest uppercase mb-4 md:mb-0">
+                    &copy; 2026 Kgorogang Thatch Roofing. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
